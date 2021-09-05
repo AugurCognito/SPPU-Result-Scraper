@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # here we create regular expression for finding sgpa
     rslt_re = re.compile(r"(YEAR SGPA :- )(\d\.\d\d)")
 
-    # Opening files to Read and Write data
+    # Opening(and creating if necessary) files to Read and Write data
     input_csv = open(args.inputFile, "r")
     output_csv = open(args.outputFile, "w")
 
